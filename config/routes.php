@@ -7,8 +7,8 @@ Router::plugin(
     ['path' => '/opauth'],
     function (RouteBuilder $routes) {
 
-		$routes->connect('/auth/callback' , ['controller'=>'Main' , 'action'=>'callback']);
-		$routes->connect('/auth/*' , ['controller'=>'Main','action'=>'auth'] );
+		$routes->connect('/auth/callback' , ['controller'=>'Auth' , 'action'=>'callback']);
+		$routes->connect('/auth/*' , ['controller'=>'Auth','action'=>'auth'] );
 
 		$routes->fallbacks('DashedRoute');
     }

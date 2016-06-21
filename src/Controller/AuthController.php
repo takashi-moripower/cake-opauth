@@ -8,11 +8,11 @@ use Opauth;
 use Cake\Core\Configure;
 
 /**
- * Main Controller
+ * Auth Controller
  *
  * @property \Comvert\Model\Table\MainTable $Main
  */
-class MainController extends AppController {
+class AuthController extends AppController {
 
 	public function auth() {
 
